@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#HostName 
+#HostName
 LocalIP=$(curl -ks ip.sb)
 HostName=$(curl -ks http://freeapi.ipip.net/$LocalIP)
 #Telegram API
