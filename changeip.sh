@@ -3,8 +3,8 @@
 LocalIP=$(curl -ks ip.sb)
 HostName=$(curl -ks http://freeapi.ipip.net/$LocalIP)
 #Telegram API
-bot_api_key="AAGvEx2yYghmYsgrclTzCBpGovraJvtL3bQ"
-chat_id="697362377"
+bot_api_key="697362377:AAGvEx2yYghmYsgrclTzCBpGovraJvtL3bQ"
+chat_id="-312563634"
 
 NIC=`ls /sys/class/net |grep -v -E 'docker|lo|veth'`
 
