@@ -5,7 +5,7 @@ do
 	do
 		for j in `docker inspect -f "{{.Id}} {{.State.Pid}}"  $(docker ps -q)|grep $i |awk '{print $1}'`
 		do 
-			docker restart $j && echo `date` >/root/ssdaemon.log
+			docker restart $j && echo `date` >>/root/ssdaemon.log
 		done
 	done
 	sleep 5
